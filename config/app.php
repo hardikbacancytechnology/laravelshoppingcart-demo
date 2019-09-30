@@ -180,6 +180,7 @@ return [
         App\Providers\RouteServiceProvider::class,
         jeremykenedy\LaravelPhpInfo\LaravelPhpInfoServiceProvider::class,
         jeremykenedy\laravel2step\laravel2stepServiceProvider::class,
+        RenatoMarinho\LaravelPageSpeed\ServiceProvider::class,
     ],
 
     /*

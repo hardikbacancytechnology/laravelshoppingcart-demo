@@ -10,7 +10,8 @@
         "jeremykenedy/laravel-phpinfo": "^1.2",
         "jeremykenedy/laravel2step": "v1.0.2",
         "laravel/framework": "5.4.*",
-        "laravel/tinker": "~1.0"
+        "laravel/tinker": "~1.0",
+        "renatomarinho/laravel-page-speed": "^1.8"
     },
     "require-dev": {
         "fzaninotto/faker": "~1.4",
