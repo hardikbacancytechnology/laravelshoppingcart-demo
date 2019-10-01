@@ -10,6 +10,7 @@
 | contains the "web" middleware group. Now create something great!
 |
 */
+use Illuminate\Support\Facades\Crypt;
 
 Route::get('/', function () {
     return view('welcome');
@@ -33,4 +34,10 @@ Auth::routes();
 
 Route::group(['middleware' => ['twostep']], function () {
     Route::get('/home', 'HomeController@index')->name('home');
+});
+
+Route::get('enc-dec',function(){
+	echo $enc = Crypt::encryptString('Hardik@123');
+	echo "<br/>";
+	echo $enc = Crypt::decryptString($enc);
 });
